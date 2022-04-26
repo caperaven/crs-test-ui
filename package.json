@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "scripts": {
+    "tauri": "tauri",
+    "build": " yarn run tauri build",
+    "dev": " yarn run tauri dev"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.0.0-rc.4"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.0-rc.9"
+  }
+}
