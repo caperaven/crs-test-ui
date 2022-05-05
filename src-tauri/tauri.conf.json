@@ -51,7 +51,7 @@
     },
     "windows": [
       {
-        "title": "test",
+        "title": "CRS Test UI",
         "width": 1024,
         "height": 768,
         "resizable": true,

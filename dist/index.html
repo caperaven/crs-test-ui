@@ -35,6 +35,12 @@
             justify-content: flex-start;
         }
 
+        header crs-widget button {
+            width: max-content;
+            min-width: 5rem;
+            height: 2rem;
+        }
+
     </style>
 </head>
 <body style="visibility: hidden" oncontextmenu="return false;">
@@ -46,6 +52,7 @@
 
     <header>
         <button aria-label="menu" class="icon" click.setValue="$globals.isMenuOpen = !$globals.isMenuOpen" classlist.if="$globals.isMenuOpen == true ? 'highlight-fill'"><svg><use xlink:href="#menu" /></svg></button>
+        <crs-widget id="tools-widget"></crs-widget>
     </header>
 
     <main autofocus tabindex="0">
@@ -69,13 +76,10 @@
         import "./node_modules/crs-binding/crs-binding.js";
         import "./node_modules/crs-modules/crs-modules.js";
         import "./node_modules/crs-router/crs-router.js";
+        import "./node_modules/crs-process-api/crs-process-api.js";
         import IndexViewModel from "./index.js";
 
         async function load() {
-            // await crs.modules.enableBinding([
-            //     ["my-component", "/components/component.js"]
-            // ])
-
             document.viewModel = new IndexViewModel(document.body);
 
             window.addEventListener("load", (event) => {

@@ -1,0 +1,50 @@
+<style>
+    edit-dialog {
+        display: grid;
+        grid-template-rows: max-content 1fr max-content;
+        grid-template-columns: 1fr;
+        width: 800px;
+        height: 600px;
+        border-radius: 5px;
+        border: solid 1px var(--border);
+        user-select: none;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    edit-dialog div[role="heading"] {
+        background: var(--bg_panel);
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+
+    edit-dialog div[role="heading"] h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+        flex: 1
+    }
+
+    .spacer {
+        flex: 1;
+    }
+
+
+</style>
+
+<div role="heading">
+    <h2>Add Step</h2>
+    <input id="edtFilter" value.bind="filter" keyup.call="filter" />
+    <div class="spacer"></div>
+    <button click.call="close">Close</button>
+</div>
+
+<crs-widget id="dialog-widget"></crs-widget>
+
+<div role="toolbar">
+
+</div>

@@ -8,6 +8,12 @@
 @import "./lib/aside.css";
 @import "./lib/color-classes.css";
 
+:root {
+    --bg_panel: #e0e0e0;
+    --border: silver;
+}
+
+
 *:focus {
     border: solid 1px blue;
 }

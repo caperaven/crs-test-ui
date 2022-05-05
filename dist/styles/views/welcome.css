@@ -1,4 +1,5 @@
-h2 {
-    text-align: center;
-    color: var(--cl-primary);
+crs-router {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }

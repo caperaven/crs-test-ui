@@ -10,7 +10,7 @@ libraries already installed are:
 
 ## Getting started
 run `yarn install` in the root folder  
-run `npm install` in the dist folder  
+run `yarn install` in the dist folder  
 
 ## Build
 `yarn tauri dev`
