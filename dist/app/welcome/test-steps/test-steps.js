@@ -4,7 +4,7 @@ class TestSteps extends crsbinding.classes.BindableElement {
     }
 
     async showDialog() {
-        crs.call("dialog", "show", {})
+        crs.call("dialog", "show")
     }
 }
 
